@@ -1,0 +1,9 @@
+{
+	"name": "dffahimSpotifyproject",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "345ee6c1-cf52-4cac-99ec-92e07d3c5e72",
+		"tenantId": "67813177-26de-484e-b4b5-03f222fed636"
+	}
+}
