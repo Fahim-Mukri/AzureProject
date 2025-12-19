@@ -133,6 +133,8 @@
 			{
 				"name": "update_last_cdc",
 				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -222,7 +224,7 @@
 						{
 							"type": "Query",
 							"text": {
-								"value": "pipeline().parameters.tableSELECT MAX(@{pipeline().parameters.cdc_col}) AS cdc\nFROM  @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
+								"value": "SELECT MAX(@{pipeline().parameters.cdc_col}) AS cdc\nFROM  @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
 								"type": "Expression"
 							}
 						}
